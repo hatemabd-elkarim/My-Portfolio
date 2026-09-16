@@ -9,7 +9,7 @@ export const PROJECTS = [
     accent: "#34D399",
     images: [
       {
-        url: "/talabat/index.png",
+        url: "talabat/index.png",
         alt: "index",
       },
       {
