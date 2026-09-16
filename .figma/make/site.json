@@ -1,0 +1,10 @@
+{
+  "description": "Showcases a backend engineer's skills, projects, and experience through a pixel art portfolio with a retro dark theme for professional impact.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
