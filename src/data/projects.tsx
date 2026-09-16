@@ -9,87 +9,87 @@ export const PROJECTS = [
     accent: "#34D399",
     images: [
       {
-        url: "public/talabat/index.png",
+        url: "/talabat/index.png",
         alt: "index",
       },
       {
-        url: "public/talabat/customer-home.png",
+        url: "/talabat/customer-home.png",
         alt: "customer homepage",
       },
       {
-        url: "public/talabat/restaurant-menu.png",
+        url: "/talabat/restaurant-menu.png",
         alt: "restaurant menu",
       },
       {
-        url: "public/talabat/restaurant-details.png",
+        url: "/talabat/restaurant-details.png",
         alt: "restaurant details",
       },
       {
-        url: "public/talabat/restaurant-reviews.png",
+        url: "/talabat/restaurant-reviews.png",
         alt: "restaurant reviews",
       },
       {
-        url: "public/talabat/write-review.png",
+        url: "/talabat/write-review.png",
         alt: "write a review",
       },
       {
-        url: "public/talabat/checkout.png",
+        url: "/talabat/checkout.png",
         alt: "checkout",
       },
       {
-        url: "public/talabat/customer-orders.png",
+        url: "/talabat/customer-orders.png",
         alt: "customer orders",
       },
       {
-        url: "public/talabat/customer-notifications.png",
+        url: "/talabat/customer-notifications.png",
         alt: "customer notifications",
       },
       {
-        url: "public/talabat/customer-profile.png",
+        url: "/talabat/customer-profile.png",
         alt: "customer profile",
       },
       {
-        url: "public/talabat/restaurant-dashboard.png",
+        url: "/talabat/restaurant-dashboard.png",
         alt: "restaurant dashboard",
       },
       {
-        url: "public/talabat/add-product.png",
+        url: "/talabat/add-product.png",
         alt: "add product",
       },
       {
-        url: "public/talabat/restaurant-orders.png",
+        url: "/talabat/restaurant-orders.png",
         alt: "restaurant orders",
       },
       {
-        url: "public/talabat/track-order-1.png",
+        url: "/talabat/track-order-1.png",
         alt: "track orders 1",
       },
       {
-        url: "public/talabat/track-order-2.png",
+        url: "/talabat/track-order-2.png",
         alt: "track orders 2",
       },
       {
-        url: "public/talabat/restaurant-profile.png",
+        url: "/talabat/restaurant-profile.png",
         alt: "restaurant profile",
       },
       {
-        url: "public/talabat/admin-dashboard.png",
+        url: "/talabat/admin-dashboard.png",
         alt: "admin dashboard",
       },
       {
-        url: "public/talabat/add-restaurant.png",
+        url: "/talabat/add-restaurant.png",
         alt: "add restaurant",
       },
       {
-        url: "public/talabat/add-coupon.png",
+        url: "/talabat/add-coupon.png",
         alt: "add coupon",
       },
       {
-        url: "public/talabat/404.png",
+        url: "/talabat/404.png",
         alt: "404 page",
       },
       {
-        url: "public/talabat/403.png",
+        url: "/talabat/403.png",
         alt: "403 page",
       },
     ],
@@ -114,31 +114,31 @@ export const PROJECTS = [
         alt: "Code on monitor",
       },
       {
-        url: "public/shoryan/UI SHORYAN APP MOBILE (4).png",
+        url: "/shoryan/UI SHORYAN APP MOBILE (4).png",
         alt: "profile",
       },
       {
-        url: "public/shoryan/UI SHORYAN APP MOBILE (2).png",
+        url: "/shoryan/UI SHORYAN APP MOBILE (2).png",
         alt: "map",
       },
       {
-        url: "public/shoryan/UI SHORYAN APP MOBILE (5).png",
+        url: "/shoryan/UI SHORYAN APP MOBILE (5).png",
         alt: "emergency",
       },
       {
-        url: "public/shoryan/UI SHORYAN APP MOBILE (3).png",
+        url: "/shoryan/UI SHORYAN APP MOBILE (3).png",
         alt: "requests",
       },
       {
-        url: "public/shoryan/UI SHORYAN APP MOBILE (6).png",
+        url: "/shoryan/UI SHORYAN APP MOBILE (6).png",
         alt: "notifications",
       },
       {
-        url: "public/shoryan/UI SHORYAN APP MOBILE (1).png",
+        url: "/shoryan/UI SHORYAN APP MOBILE (1).png",
         alt: "chatbot",
       },
       {
-        url: "public/shoryan/UI SHORYAN APP MOBILE (7).png",
+        url: "/shoryan/UI SHORYAN APP MOBILE (7).png",
         alt: "smart matching",
       },
     ],
@@ -155,63 +155,63 @@ export const PROJECTS = [
     accent: "#818CF8",
     images: [
       {
-        url: "public/gryffindor/student-home.png",
+        url: "/gryffindor/student-home.png",
         alt: "student home",
       },
       {
-        url: "public/gryffindor/student-courses.png",
+        url: "/gryffindor/student-courses.png",
         alt: "student courses",
       },
       {
-        url: "public/gryffindor/student-quizzes.png",
+        url: "/gryffindor/student-quizzes.png",
         alt: "student quizzes",
       },
       {
-        url: "public/gryffindor/quiz-results.png",
+        url: "/gryffindor/quiz-results.png",
         alt: "quiz results",
       },
       {
-        url: "public/gryffindor/student-shop.png",
+        url: "/gryffindor/student-shop.png",
         alt: "student shop",
       },
       {
-        url: "public/gryffindor/owlery.png",
+        url: "/gryffindor/owlery.png",
         alt: "owlery",
       },
       {
-        url: "public/gryffindor/students-leaderboard.png",
+        url: "/gryffindor/students-leaderboard.png",
         alt: "students leaderboard",
       },
       {
-        url: "public/gryffindor/house-leaderboard.png",
+        url: "/gryffindor/house-leaderboard.png",
         alt: "houses leaderboard",
       },
       {
-        url: "public/gryffindor/student-roaster.png",
+        url: "/gryffindor/student-roaster.png",
         alt: "student roaster",
       },
       {
-        url: "public/gryffindor/faculty-roaster.png",
+        url: "/gryffindor/faculty-roaster.png",
         alt: "faculty roaster",
       },
       {
-        url: "public/gryffindor/manage-courses.png",
+        url: "/gryffindor/manage-courses.png",
         alt: "manage courses",
       },
       {
-        url: "public/gryffindor/manage-shop.png",
+        url: "/gryffindor/manage-shop.png",
         alt: "manage shop",
       },
       {
-        url: "public/gryffindor/professor-classrooms.png",
+        url: "/gryffindor/professor-classrooms.png",
         alt: "professor home",
       },
       {
-        url: "public/gryffindor/manage-quizzes.png",
+        url: "/gryffindor/manage-quizzes.png",
         alt: "manage quizzes",
       },
       {
-        url: "public/gryffindor/404.png",
+        url: "/gryffindor/404.png",
         alt: "404 page",
       },
     ],
@@ -231,7 +231,7 @@ export const PROJECTS = [
         alt: "Code on dark screen",
       },
       {
-        url: "public/down-up/1758879776041.jpeg",
+        url: "/down-up/1758879776041.jpeg",
         alt: "running",
       },
     ],

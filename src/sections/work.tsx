@@ -2,7 +2,7 @@ import { HeroTerminal } from "../components/heroTerminal";
 import { TypingBadge } from "../components/typingBadge";
 import { DownloadIcon } from "../components/downloadIcon";
 
-const PROFILE_IMAGE_URL = "public/hatem.jpeg";
+const PROFILE_IMAGE_URL = "/hatem.jpeg";
 const DOWNLOAD_RESUME = "public/Hatem_Ayman_Resume.pdf";
 
 // ─── Hero Section ─────────────────────────────────────────────────────────────
@@ -153,7 +153,7 @@ export function Hero() {
           }}
         >
           <div style={{ display: "flex", gap: "14px" }}>
-            {/* Profile portrait */}
+            {/* Profile portrait
             <div
               style={{
                 width: "140px",
@@ -187,7 +187,7 @@ export function Hero() {
                   <path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8" />
                 </svg>
               )}
-            </div>
+            </div> */}
 
             <div style={{ flex: 1, minWidth: 0 }}>
               <div
