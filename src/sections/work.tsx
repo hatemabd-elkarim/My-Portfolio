@@ -3,7 +3,6 @@ import { TypingBadge } from "../components/typingBadge";
 import { DownloadIcon } from "../components/downloadIcon";
 
 const PROFILE_IMAGE_URL = "/hatem.jpeg";
-const DOWNLOAD_RESUME = "/Hatem_Ayman_Resume.pdf";
 
 // ─── Hero Section ─────────────────────────────────────────────────────────────
 
@@ -116,7 +115,7 @@ export function Hero() {
             View Projects
           </button>
           <a
-            href={`/${DOWNLOAD_RESUME}`}
+            href="/Hatem_Ayman_Resume.pdf" target="_blank"
             download="Hatem_Ayman_Resume.pdf"
             className="btn-retro font-pixel flex items-center gap-2"
             style={{
