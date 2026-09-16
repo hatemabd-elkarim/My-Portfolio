@@ -201,7 +201,7 @@ export function Hero() {
                 PLAYER_STATS.JSON
               </div>
               {[
-                { key: "name", val: '"Hatem Ayman"' },
+                { key: "name", val: '"Hatem Ayman Abd-Elkarim"' },
                 { key: "class", val: '"Software Engineer"' },
                 {
                   key: "tech",
