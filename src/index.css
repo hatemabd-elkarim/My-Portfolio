@@ -181,10 +181,19 @@ body {
   .proj-card-row {
     flex-direction: column;
   }
+
   .proj-card-media {
-    flex: 1 1 auto;
+    flex: none;
+    width: 100%;
     max-width: 100%;
-    min-height: 240px;
+    height: 240px;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .proj-card-media {
+    height: 200px;
   }
 }
 
