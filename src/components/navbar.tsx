@@ -8,6 +8,7 @@ const NAV_LINKS = ["Work", "Projects", "Skills", "Activities"];
 export function Navbar() {
   const [active, setActive] = useState("");
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -20,6 +21,7 @@ export function Navbar() {
       .getElementById(id.toLowerCase())
       ?.scrollIntoView({ behavior: "smooth" });
     setActive(id);
+    setMenuOpen(false);
   };
 
   return (
@@ -28,26 +30,71 @@ export function Navbar() {
         position: "sticky",
         top: 0,
         zIndex: 100,
-        background: scrolled ? "rgba(15,20,28,0.97)" : "#0F141C",
+        background: scrolled || menuOpen ? "rgba(15,20,28,0.97)" : "#0F141C",
         borderBottom: "2px solid #475569",
         boxShadow: scrolled ? "0 4px 0px #000000" : "none",
         transition: "background 0.2s, box-shadow 0.2s",
       }}
     >
       <div
+        className="section-container"
         style={{
           maxWidth: "1440px",
-          margin: "0 auto",
-          padding: "0 48px",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
           height: "60px",
+          position: "relative",
         }}
       >
         <PixelMonogram />
 
-        <div className="flex items-center gap-6">
+        {/* Mobile hamburger toggle */}
+        <button
+          className="nav-toggle btn-retro"
+          onClick={() => setMenuOpen((o) => !o)}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          style={{
+            background: "#1B2230",
+            border: "2px solid #475569",
+            color: "#F3F4F6",
+            width: "36px",
+            height: "36px",
+            alignItems: "center",
+            justifyContent: "center",
+            cursor: "pointer",
+            boxShadow: "2px 2px 0px #000000",
+          }}
+        >
+          {menuOpen ? (
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+            >
+              <line x1="4" y1="4" x2="20" y2="20" />
+              <line x1="20" y1="4" x2="4" y2="20" />
+            </svg>
+          ) : (
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+            >
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          )}
+        </button>
+
+        <div className={`nav-links${menuOpen ? " open" : ""}`}>
           {NAV_LINKS.map((link) => (
             <button
               key={link}

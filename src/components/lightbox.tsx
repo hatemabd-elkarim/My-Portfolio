@@ -158,6 +158,7 @@ export function Lightbox({
           src={images[idx].url}
           alt={images[idx].alt}
           draggable={false}
+          decoding="async"
           style={{
             maxWidth: "100%",
             maxHeight: "100%",

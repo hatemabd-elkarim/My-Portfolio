@@ -7,26 +7,19 @@ export function Skills() {
   return (
     <section
       id="skills"
+      className="section-pad"
       style={{
         borderTop: "2px solid #475569",
-        padding: "80px 0",
         background: "#0a0f16",
       }}
     >
-      <div style={{ maxWidth: "1440px", margin: "0 auto", padding: "0 48px" }}>
+      <div className="section-container" style={{ maxWidth: "1440px" }}>
         <SectionHeader
           label="INVENTORY.DAT"
           subtitle="Equipped skills and tools"
         />
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: "24px",
-            marginTop: "48px",
-          }}
-        >
+        <div className="skills-grid">
           {Object.entries(SKILLS).map(([category, items], catIdx) => {
             const catColors = ["#34D399", "#FBBF24", "#818CF8"];
             const color = catColors[catIdx % catColors.length];
@@ -69,13 +62,7 @@ export function Skills() {
 
                 {/* Inventory slots */}
                 <div style={{ padding: "12px" }}>
-                  <div
-                    style={{
-                      display: "grid",
-                      gridTemplateColumns: "repeat(3, 1fr)",
-                      gap: "6px",
-                    }}
-                  >
+                  <div className="inv-grid">
                     {items.map((item) => (
                       <div
                         key={item.label}

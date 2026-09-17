@@ -1,6 +1,6 @@
 import { ImageCarousel } from "@/components/imageCarousel.tsx";
 import { SectionHeader } from "../components/sectionHeader.tsx";
-import { GithubIcon, ExternalLinkIcon} from "../components/pixelArt.tsx";
+import { GithubIcon, ExternalLinkIcon } from "../components/pixelArt.tsx";
 import { PROJECTS } from "../data/projects.tsx";
 
 // ─── Projects Section ─────────────────────────────────────────────────────────
@@ -9,13 +9,13 @@ export function Projects() {
   return (
     <section
       id="projects"
+      className="section-pad"
       style={{
         background: "#0F141C",
         borderTop: "2px solid #475569",
-        padding: "80px 0",
       }}
     >
-      <div style={{ maxWidth: "1440px", margin: "0 auto", padding: "0 48px" }}>
+      <div className="section-container" style={{ maxWidth: "1440px" }}>
         <SectionHeader
           label="PROJECTS.EXE"
           subtitle="Selected works — hover to inspect"
