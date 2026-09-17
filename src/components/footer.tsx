@@ -45,12 +45,13 @@ export function Footer() {
     >
       {/* Status bar */}
       <div
+        className="footer-status-bar"
         style={{
           borderBottom: "1px solid #1B2230",
-          padding: "10px 48px",
           display: "flex",
+          flexWrap: "wrap",
           alignItems: "center",
-          gap: "24px",
+          gap: "12px 24px",
         }}
       >
         <div
@@ -90,16 +91,7 @@ export function Footer() {
       </div>
 
       {/* Main footer row */}
-      <div
-        style={{
-          maxWidth: "1440px",
-          margin: "0 auto",
-          padding: "24px 48px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-        }}
-      >
+      <div className="footer-row">
         <div>
           <PixelMonogram />
           <div
@@ -143,11 +135,10 @@ export function Footer() {
         </div>
 
         <div
-          className="font-mono"
+          className="font-mono footer-note"
           style={{
             fontSize: "10px",
             color: "#475569",
-            textAlign: "right",
           }}
         >
           <span style={{ color: "#34D399" }}>{">"}</span> Deployed on the edge

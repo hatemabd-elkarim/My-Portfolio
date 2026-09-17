@@ -18,13 +18,13 @@ export function Timeline() {
   return (
     <section
       id="activities"
+      className="section-pad"
       style={{
         borderTop: "2px solid #475569",
-        padding: "80px 0",
         background: "#0F141C",
       }}
     >
-      <div style={{ maxWidth: "900px", margin: "0 auto", padding: "0 48px" }}>
+      <div className="section-container" style={{ maxWidth: "900px" }}>
         <SectionHeader
           label="QUEST_LOG.TXT"
           subtitle="Work, achievements & community"
@@ -33,10 +33,9 @@ export function Timeline() {
         <div style={{ marginTop: "56px", position: "relative" }}>
           {/* Vertical line */}
           <div
-            className="quest-line"
+            className="quest-line tl-line"
             style={{
               position: "absolute",
-              left: "120px",
               top: "8px",
               bottom: "8px",
               width: "2px",
@@ -49,17 +48,14 @@ export function Timeline() {
               return (
                 <div
                   key={i}
+                  className="tl-row"
                   style={{
-                    display: "grid",
-                    gridTemplateColumns: "120px 2px 1fr",
-                    gap: "0 24px",
-                    position: "relative",
                     paddingBottom: i < TIMELINE.length - 1 ? "32px" : "0",
                   }}
                 >
                   {/* Date */}
                   <div
-                    className="font-pixel"
+                    className="font-pixel tl-date"
                     style={{
                       fontSize: "9px",
                       color: "#475569",
@@ -72,6 +68,7 @@ export function Timeline() {
 
                   {/* Diamond node */}
                   <div
+                    className="tl-node"
                     style={{
                       position: "relative",
                       display: "flex",
@@ -97,6 +94,8 @@ export function Timeline() {
 
                   {/* Content */}
                   <div
+                    className="tl-content"
+                    data-year={item.year}
                     style={{
                       background: "#1B2230",
                       border: "2px solid #475569",
@@ -140,6 +139,7 @@ export function Timeline() {
                         fontSize: "12px",
                         color: "#94A3B8",
                         lineHeight: "1.7",
+                        whiteSpace: "pre-line",
                       }}
                     >
                       {item.desc}

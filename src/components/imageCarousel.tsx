@@ -60,25 +60,35 @@ export function ImageCarousel({
       onPointerLeave={onPointerUp}
       onClick={onImageClick}
     >
-      {/* Images */}
-      {images.map((img, i) => (
-        <img
-          key={i}
-          src={img.url}
-          alt={img.alt}
-          draggable={false}
-          style={{
-            position: "absolute",
-            inset: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            opacity: i === idx ? 1 : 0,
-            transition: "opacity 0.25s ease",
-            pointerEvents: "none",
-          }}
-        />
-      ))}
+      {/* Images — only mount the active slide + its immediate neighbors so we
+          don't force-load every image in every project on page load */}
+      {images.map((img, i) => {
+        const distance = Math.min(
+          Math.abs(i - idx),
+          images.length - Math.abs(i - idx),
+        );
+        if (distance > 1) return null;
+        return (
+          <img
+            key={i}
+            src={img.url}
+            alt={img.alt}
+            draggable={false}
+            loading="lazy"
+            decoding="async"
+            style={{
+              position: "absolute",
+              inset: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              opacity: i === idx ? 1 : 0,
+              transition: "opacity 0.25s ease",
+              pointerEvents: "none",
+            }}
+          />
+        );
+      })}
 
       {/* Zoom hint icon */}
       <div

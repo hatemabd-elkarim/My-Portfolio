@@ -8,19 +8,7 @@ const PROFILE_IMAGE_URL = "/hatem.jpeg";
 
 export function Hero() {
   return (
-    <section
-      id="work"
-      style={{
-        maxWidth: "1440px",
-        margin: "0 auto",
-        padding: "80px 48px 100px",
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        gap: "80px",
-        alignItems: "center",
-        minHeight: "88vh",
-      }}
-    >
+    <section id="work" className="hero-grid">
       {/* Left: text */}
       <div>
         <div style={{ marginBottom: "40px" }}>
@@ -65,6 +53,7 @@ export function Hero() {
           className="font-mono"
           style={{
             display: "flex",
+            flexWrap: "wrap",
             gap: "24px",
             marginBottom: "40px",
             fontSize: "11px",
@@ -93,7 +82,7 @@ export function Hero() {
           ))}
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-wrap">
           <button
             className="btn-retro font-pixel"
             onClick={() =>
@@ -115,7 +104,8 @@ export function Hero() {
             View Projects
           </button>
           <a
-            href="/Hatem_Ayman_Resume.pdf" target="_blank"
+            href="/Hatem_Ayman_Resume.pdf"
+            target="_blank"
             download="Hatem_Ayman_Resume.pdf"
             className="btn-retro font-pixel flex items-center gap-2"
             style={{
